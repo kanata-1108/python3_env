@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python3:
+    restart: always
+    build: .
+    image: 'python3_env'
+    container_name: 'python3_local'
+    tty: true
+    volumes:
+      - ./src:/usr/src
